@@ -1,0 +1,26 @@
+{
+  "name": "@reste/c",
+  "version": "1.0.1",
+  "description": "Reste C is a lightweight, powerful library for creating logs and various types of responses.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "module": "lib/index.esm.js",
+  "scripts": {
+    "prestart": "tslint -c tslint.json -p tsconfig.json --fix",
+    "start": "rm -rf lib && rollup -c",
+    "test": "echo test!"
+  },
+  "author": "Dominik Linkowski",
+  "homepage": "https://github.com/reste-io/c",
+  "license": "MIT",
+  "dependencies": {},
+  "keywords": [
+    "Reste"
+  ],
+  "devDependencies": {
+    "typescript": "^3.9.7",
+    "rollup": "^2.32.1",
+    "rollup-plugin-typescript2": "^0.28.0",
+    "tslint": "^6.1.0"
+  }
+}

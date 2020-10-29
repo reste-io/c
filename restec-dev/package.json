@@ -1,0 +1,18 @@
+{
+  "name": "reste-c-dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/main.js",
+  "scripts": {
+    "lib": "npm install --prefix ../restec/ && npm start --prefix ../restec/ && sudo npm link ../restec/",
+    "prestart": "tslint -c tslint.json -p tsconfig.json --fix && rm -rf build && tsc",
+    "start": "node build/main.js",
+    "test": "echo 0"
+  },
+  "author": "Dominik Linkowski",
+  "license": "ISC",
+  "dependencies": {
+    "tslint": "^6.1.0",
+    "typescript": "^3.9.7"
+  }
+}
